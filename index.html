@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand-name">
+                <a href="">Agus</a>
+            </div>
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="hero">
+            <section class="intro">
+                <div class="image-agus">
+                    <img src="media/Agus Foto.jpg" width="200px" alt="">
+                    <h1>❤️</h1>  
+                    <img src="media/Chintya Foto.jpg" width="200px" alt="">
+                </div>
+                <h1>Hello! My Name Is Agus And Beside Me Is My Girlfriend Chintya</h1>
+                
+                <p>I Am A Student, A Really Good Student + Smart Student. This Is My Portfolio Website, With This You Will Know What I Am Capable Of</p>
+            </section>
+        </section>
+        
+        <!-- <div class="body-background"></div> -->
+        <section class="mass-sect">
+        <div class="masonry-container">
+        <div class="masonry-header">
+            <!-- <h1>GALERI</h1> -->
+            <div class="text-outline">GALERI</div>
+            <div class="text-shadow">GALERI</div>
+        </div>
+        <div class="masonry">
+            <img onclick="showPict(4)" id="image" src="media/img4.jpg" alt="">
+            <img onclick="showPict(3)" id="image" src="media/img3.jpg" alt="">
+            <img onclick="showPict(1)" id="image" src="media/img1.jpg" alt="">
+            <img onclick="showPict(2)" id="image" src="media/img2.jpg" alt="">
+            <img onclick="showPict(5)" id="image" src="media/img5.jpg" alt="">
+            <img onclick="showPict(6)" id="image" src="media/img6.jpg" alt="">
+            <img onclick="showPict(9)" id="image" src="media/img9.jpg" alt="">
+            <img onclick="showPict(7)" id="image" src="media/img7.jpg" alt="">
+            <img onclick="showPict(8)" id="image" src="media/img8.jpg" alt="">
+            <img onclick="showPict(10)" id="image" src="media/img10.jpg" alt="">
+        </div>
+        </div>
+        </section>
+
+        <div class="modal" id="mdl">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img">
+        </div>
+    </main>
+    <footer></footer>
+
+    <script>
+        var modal = document.getElementById("mdl");
+        var img = document.getElementById("image");
+        var modalImg = document.getElementById("img");
+        
+        function showPict(index) {
+            console.log("succes");
+            modal.style.display = "block"
+            modalImg.src = "media/img" + index + ".jpg";
+            console.log(modalImg.src);
+        }
+
+        let span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
