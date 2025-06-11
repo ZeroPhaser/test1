@@ -201,7 +201,7 @@ main {
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 100px;
+    max-width: 300px;
 }
 
 .close {
