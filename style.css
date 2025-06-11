@@ -16,7 +16,7 @@ nav {
     padding: 0 2rem;
     height: 60px;
     border-bottom: 2px solid gray;
-    background: linear-gradient(blue, green);
+    background: linear-gradient(to right, blue, orange);
     box-shadow: 0 5px 5px rgba(o, 0, 0, 0.5);
 }
 
