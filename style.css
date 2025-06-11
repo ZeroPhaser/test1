@@ -215,7 +215,7 @@ main {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
  .image-agus img {
     width: 100px;
  } 
